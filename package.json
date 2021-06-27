@@ -1,0 +1,49 @@
+{
+  "name": "@shilong/vue-admin",
+  "version": "0.0.1",
+  "private": true,
+  "description": "web application components for vue lib",
+  "main": "index.js",
+  "module": "dist/index.esm.js",
+  "unpkg": "dist/index.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/hello-world.esm.js",
+    "build:utils": "",
+    "site:dev": "webpack server --config ./site/webpack.config.js",
+    "site:build": "NODE_ENV=production webpack --config ./site/webpack.config.js"
+  },
+  "keywords": [
+    "vue",
+    "admin"
+  ],
+  "peerDependencies": {
+    "vue": "3.1.2"
+  },
+  "author": "onlylonger&shariseMo",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-buble": "^0.21.3",
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "@vue/compiler-sfc": "^3.1.2",
+    "css-loader": "^5.2.6",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^1.6.1",
+    "rollup": "^1.17.0",
+    "rollup-plugin-vue": "^5.0.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.0.0",
+    "url-loader": "^4.1.1",
+    "vue": "3.1.2",
+    "vue-loader": "16.2.0",
+    "vue-router": "^4.0.10",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {},
+  "workspaces": [
+    "packages/*"
+  ]
+}

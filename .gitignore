@@ -1,0 +1,14 @@
+# 目录类
+node_modules
+bin
+dist
+dist-site
+
+
+# 隐藏文件类
+.DS_Store
+
+
+
+
+

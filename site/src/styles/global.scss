@@ -1,0 +1,40 @@
+@import "./var.scss";
+
+html,
+body {
+  height: 100%;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", SimSun, sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  padding-top: 80px;
+  height: calc(100% - 80px);
+}
+
+a {
+  color: $primaryLight;
+  text-decoration: none;
+  opacity: 0.5;
+  font-weight: bold;
+}
+
+.router-link-active {
+  color: $primaryDark;
+  opacity: 1;
+  position: relative;
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 15px);
+    width: 30px;
+    height: 2px;
+    background: $primaryDark;
+  }
+}
