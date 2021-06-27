@@ -1,6 +1,12 @@
+<!--
+ * @Author: mo
+ * @LastEditors: mo
+ * @LastEditTime: 2021-06-27 22:48:07
+ * @Description: 
+-->
 <template>
   <layout>
-    assets
+    assets1231423
   </layout>
 </template>
 
